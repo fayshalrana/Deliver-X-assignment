@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="javascriptreact">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About-Deliver X - webflow Ecommerce website template</title>
+
+    <!-- Favicon  -->
+     <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon">
+
+    <!-- Link bootstrap css file-->
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css" />
+
+    <!-- Link fontAwesome css file  -->
+    <script src="/Js/Icon.js"></script>
+
+    <!-- Link compiled css from scss  -->
+    <link rel="stylesheet" href="/CSS/scss/style.css" />
+
+    <!-- Media query -->
+    <link rel="stylesheet" href="/CSS/mediaQuery.css" />
+  </head>
+  <body>
+    <!-- header section start here  -->
+    <header id="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="/">
+              <img src="/images/company-logo.svg" alt="company-logo" />
+            </a>
+          </div>
+
+          <!-- cart for mobile  -->
+          <a href="#" class="mobile_cart addToCart">
+            <span>Cart</span>
+            <span>(0)</span>
+          </a>
+
+          <div class="menus">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li class="pages">
+                <a href="#"
+                  >pages
+                  <div class="arrow"></div
+                ></a>
+              </li>
+              <div class="sub_menu_warper">
+                <div class="sub_menu">
+                  <div class="sub_menu_item">
+                    <h3>Menu</h3>
+                    <div class="sub_menus">
+                      <ul class="first_menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Blog post</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="#">Plan single</a></li>
+                        <li><a href="#">Register</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sub_menu_item">
+                    <h3>Utility pages</h3>
+                    <div class="sub_menus">
+                      <ul>
+                        <li><a href="#">Start here</a></li>
+                        <li><a href="#">Styleguid</a></li>
+                        <li><a href="#">Password protected</a></li>
+                        <li><a href="#">404 Not found</a></li>
+                        <li><a href="#">Licenses</a></li>
+                        <li><a href="#">Changelog</a></li>
+                        <li>
+                          <a href="#" class="more_template"
+                            >Browse More Templates</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <li class="addToCart"><a href="#">Cart(0)</a></li>
+            </ul>
+            <div class="menus_actions">
+              <a href="#" class="Download_btn">Download app</a>
+              <a href="#" class="register_btn">Register</a>
+            </div>
+          </div>
+
+          <!-- Mobile menu toggle button  -->
+          <button class="toggle_menu">
+            <span class="bar_one"></span>
+            <span class="bar_two"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile_menu">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li class="mobilePagesMenu">
+            <a href="#"
+              >Page
+              <div class="arrow"></div
+            ></a>
+          </li>
+          <div class="mobile_menu_page">
+            <div class="mobile_menu_item">
+              <h3>Menu</h3>
+              <div class="mobile_menus">
+                <ul class="first_menu">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Blog post</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Plans</a></li>
+                  <li><a href="#">Plan single</a></li>
+                  <li><a href="#">Register</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mobile_menu_item">
+              <h3>Utility pages</h3>
+              <div class="mobile_menus">
+                <ul>
+                  <li><a href="#">Start here</a></li>
+                  <li><a href="#">Styleguid</a></li>
+                  <li><a href="#">Password protected</a></li>
+                  <li><a href="#">404 Not found</a></li>
+                  <li><a href="#">Licenses</a></li>
+                  <li><a href="#">Changelog</a></li>
+                  <li>
+                    <a href="#" class="more_template">Browse More Templates</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <li class="get_start_btn"><a href="#">Get started</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Add to cart  bar  -->
+     <div class="cart_section">
+      <div class="cart_box">
+        <div class="cart_header">
+          <h3>Your Cart</h3>
+          <button class="close_cart"><i class="ph ph-x"></i></button>
+        </div>
+        <div class="cart_body">
+          <p>No item found.</p>
+          <a href="#">Go to Pricing</a>
+        </div>
+      </div>
+     </div>
+
+    <!-- Hero section start here  -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero_section_main">
+          <div class="hero_text">
+            <h3>ABOUT DELIVER X</h3>
+            <h1>We are here to help amazing restaurants get great customers</h1>
+            <p>
+              At morbi adipiscing sit sed consectetur senectus Dignissim sed
+              amet tincidunt vitae ultricies ultrices amet fermentum amet neque
+              et id sed lacinia massa pretium aliquam libero et.
+            </p>
+          </div>
+          <div class="hero_img">
+            <img src="/images/hero.png" alt="hero image" />
+            <div class="hero_assist_one">
+              <img src="/images/hero-assist-one.png" alt="hero-assist-one" />
+            </div>
+            <div class="hero_assist_two">
+              <img src="/images/hero-assist-two.svg" alt="hero-assist-two" />
+            </div>
+          </div>
+        </div>
+        <div class="status">
+          <div class="status_item">
+            <h2>10M<span>+</span></h2>
+            <p>Happy customers</p>
+          </div>
+          <div class="status_item">
+            <h2>500k<span>+</span></h2>
+            <p>Restaurants available</p>
+          </div>
+          <div class="status_item">
+            <h2>30M<span>+</span></h2>
+            <p>Successful deliveries</p>
+          </div>
+          <div class="status_item">
+            <h2>99.9<span>%</span></h2>
+            <p>Customer satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About us section start here  -->
+    <section id="about">
+      <div class="container">
+        <div class="about_main">
+          <div class="about_details details_one">
+            <div class="about_img about_first_image">
+              <img src="/images/about-one.jpeg" alt="about image one" />
+            </div>
+            <div class="about_text">
+              <div class="about_text_content">
+                <h3>ABOUT US</h3>
+                <h2>Our company started back in 2016</h2>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                  consequuntur magni dolores eos qui ratione voluptatem sequi
+                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                  dolor sit amet, consectetur.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="about_details details_two">
+            <div class="about_text">
+              <div class="about_text_content">
+                <h3>OUR MISSION</h3>
+                <h2>Our mission is to disrupt the food industry</h2>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                  quia voluptas sit aspernatur aut odit aut fugit.
+                </p>
+              </div>
+            </div>
+            <div class="about_img about_second_image">
+              <img src="/images/about-two.jpeg" alt="about image two" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Journey section start here  -->
+    <section id="journey">
+      <div class="container">
+        <div class="row journey_main">
+          <div class="col-lg-6">
+            <div class="journey_header">
+              <h3>OUR JOURNEY</h3>
+              <h2>It has been a long but incredible journey</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
+                egestas morbi sem vulputate etiam facilisis pellentesque ut
+                quis.
+              </p>
+              <div class="download_btn">
+                <a href="#" class="register_btn">Download app</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="journey_items">
+              <div class="items">
+                <h3>2016</h3>
+                <h2>Deliver X was founded</h2>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam.
+                </p>
+              </div>
+              <div class="items">
+                <h3>2016</h3>
+                <h2>Deliver X was founded</h2>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam.
+                </p>
+              </div>
+              <div class="items">
+                <h3>2016</h3>
+                <h2>Deliver X was founded</h2>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam.
+                </p>
+              </div>
+              <div class="items">
+                <h3>2016</h3>
+                <h2>Deliver X was founded</h2>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae vitae dicta sunt explicabo. Nemo enim ipsam.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- partners section start here  -->
+    <section id="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 partners_header m-auto">
+            <h3>OUR PARTNERS</h3>
+            <h2>We don’t walk alone, Deliver X works thanks to our partners</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
+              egestas morbi sem vulputate etiam facilisis pellentesque ut quis.
+            </p>
+          </div>
+        </div>
+        <div class="row partners_main">
+          <div class="col-lg-4">
+            <div class="partners_item">
+              <div class="partners_img">
+                <img src="/images/customer-one.svg" alt="customer image one" />
+              </div>
+              <h3>Customers</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="partners_item">
+              <div class="partners_img">
+                <img src="/images/customer-two.svg" alt="customer image two" />
+              </div>
+              <h3>Customers</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="partners_item">
+              <div class="partners_img">
+                <img
+                  src="/images/customer-three.svg"
+                  alt="customer image three"
+                />
+              </div>
+              <h3>Customers</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Press and news section start here  -->
+    <section id="press_and_news">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 m-auto news_header">
+            <h3>PRESS & NEWS</h3>
+            <h2>See what the press says about Deliver X</h2>
+          </div>
+        </div>
+        <div class="row news_main">
+          <div class="col-lg-6 p-md-3 press_item">
+            <div class="news_item">
+              <a href="">
+                <div class="news_item_head">
+                  <img
+                    src="/images/news-icon-one.svg"
+                    alt="press and news icon one"
+                  />
+                </div>
+                <h2>Deliver X raises $26M in series B funding for growth</h2>
+                <div class="news_item_bottom">
+                  <div class="link_btn">
+                    <button>
+                      Read more<i class="ph-bold ph-arrow-up-right"></i>
+                    </button>
+                  </div>
+                  <div class="link_date">
+                    <p>January 22, 2024</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 p-md-3 press_item">
+            <div class="news_item">
+              <a href="">
+                <div class="news_item_head">
+                  <img
+                    src="/images/news-icon-two.svg"
+                    alt="press and news icon two"
+                  />
+                </div>
+                <h2>Deliver X raises $26M in series B funding</h2>
+                <div class="news_item_bottom">
+                  <div class="link_btn">
+                    <button>
+                      Read more<i class="ph-bold ph-arrow-up-right"></i>
+                    </button>
+                  </div>
+                  <div class="link_date">
+                    <p>January 22, 2024</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 p-md-3 press_item">
+            <div class="news_item">
+              <a href="">
+                <div class="news_item_head">
+                  <img
+                    src="/images/news-icon-three.svg"
+                    alt="press and news icon three"
+                  />
+                </div>
+                <h2>Deliver X raises $26M in series B funding</h2>
+                <div class="news_item_bottom">
+                  <div class="link_btn">
+                    <button>
+                      Read more<i class="ph-bold ph-arrow-up-right"></i>
+                    </button>
+                  </div>
+                  <div class="link_date">
+                    <p>January 22, 2024</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 p-md-3 press_item">
+            <div class="news_item">
+              <a href="">
+                <div class="news_item_head">
+                  <img
+                    src="/images/news-icon-four.svg"
+                    alt="press and news icon four"
+                  />
+                </div>
+                <h2>Deliver X raises $26M in series B funding</h2>
+                <div class="news_item_bottom">
+                  <div class="link_btn">
+                    <button>
+                      Read more<i class="ph-bold ph-arrow-up-right"></i>
+                    </button>
+                  </div>
+                  <div class="link_date">
+                    <p>January 22, 2024</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action section start here  -->
+    <footer id="footer">
+      <div class="container">
+        <div id="call_to_action">
+          <div class="company_details">
+            <div class="company_logo">
+              <a href="/">
+                <img src="/images//company-logo.svg" alt="company-logo"
+              /></a>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+              eiusmod tempor incididunt ut.
+            </p>
+          </div>
+          <div class="action_button">
+            <a href="#"
+              ><i class="ph-fill ph-apple-logo"></i>Download for iOS</a
+            >
+            <a href="#"
+              ><i class="ph-fill ph-android-logo"></i>Download for Android</a
+            >
+          </div>
+        </div>
+
+        <div id="footer_items">
+          <div class="footer_item">
+            <h3>Menu</h3>
+            <div class="footer_menus">
+              <ul class="first_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Blog post</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Plans</a></li>
+                <li><a href="#">Plan single</a></li>
+                <li><a href="#">Register</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer_item">
+            <h3>Utility pages</h3>
+            <div class="footer_page_menus">
+              <ul>
+                <li><a href="#">Start here</a></li>
+                <li><a href="#">Styleguid</a></li>
+                <li><a href="#">Password protected</a></li>
+                <li><a href="#">404 Not found</a></li>
+                <li><a href="#">Licenses</a></li>
+                <li><a href="#">Changelog</a></li>
+              </ul>
+              <a href="#">Browse More Templates</a>
+            </div>
+          </div>
+          <div class="footer_item">
+            <h3>Utility pages</h3>
+            <div class="footer_country">
+              <div class="show_country">
+                <div class="country_img">
+                  <img src="/images/country-one.svg" alt="country-one" />
+                </div>
+                <h3>San Francisco, CA</h3>
+              </div>
+              <div class="show_country">
+                <div class="country_img">
+                  <img src="/images/country-two.svg" alt="country-two" />
+                </div>
+                <h3>New York, NY</h3>
+              </div>
+              <div class="show_country">
+                <div class="country_img">
+                  <img src="/images/country-three.svg" alt="country-one" />
+                </div>
+                <h3>Los Angeles, CA</h3>
+              </div>
+              <div class="show_country">
+                <div class="country_img">
+                  <img src="/images/country-four.svg" alt="country-four" />
+                </div>
+                <h3>Seattle, WA</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="copyright">
+          <p>
+            Copyright © Deliver X | Designed by <a href="#">BRIX Templates</a> -
+            Powered by <a href="#">Webflow</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sponsor template section start here  -->
+    <div id="sponsor">
+      <a href="#">
+        <div class="sponsor_img">
+          <img src="/images/sponsor_icon.png" alt="sponsor_icon" />
+        </div>
+        <div class="sponsor_text">
+          <p>
+            Explore our collection of 200+
+            <span>Premium Webflow Templates</span>
+          </p>
+        </div>
+        <div class="dot"></div>
+      </a>
+    </div>
+
+    <!-- Link bootstrap js file-->
+    <script src="/Js/bootstrap.bundle.min.js"></script>
+
+    <!-- GSAP Script  -->
+    <script src="/Js/gsap.min.js"></script>
+
+    <!-- GSAP scrollTregger Script  -->
+    <script src="/Js/ScrollTrigger.min.js"></script>
+
+    <!-- Custom js  -->
+    <script src="/Js/script.js"></script>
+  </body>
+</html>
