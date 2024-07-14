@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         if (!isHoveringMenu && !isHoveringSubMenu) {
           pageSubMenus.classList.remove("show_sub_menu");
-          console.log("mouse leave submenu");
         }
       }, 10); // Delay to ensure submenu doesn't disappear when moving between menu and submenu
     });
